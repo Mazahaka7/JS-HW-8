@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .test-header {
+        text-align: center;
+      }
+      .timer {
+        position: absolute;
+        top: 30px;
+        right: 80px;
+        font-size: 25px;
+      }
+      .timer__btn {
+        display: none;
+      }
+      .student-info {
+        display: flex;
+        width: 70%;
+        margin: 30px auto;
+        justify-content: space-around;
+      }
+      ul {
+        list-style: none;
+      }
+      #result {
+        position: fixed;
+        background: white;
+        padding: 20px;
+        right: 20px;
+        top: 20px;
+      }
+      .bgGreen {
+        background: green;
+      }
+      .bgRed {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="test-header">
+        <h1>Test JavaScript Essential</h1>
+        <div class="timer">
+          <button class="timer__btn">Start</button>
+          <b><span id="minutes">00</span></b>
+          <b><span>:</span></b>
+          <b><span id="seconds">00</span></b>
+        </div>
+      </div>
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Что обозначает приставка Java в имени JavaScript?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question1" />A. Язык JavaScript и Java
+              это одно и тоже.
+            </li>
+            <li>
+              <input type="radio" name="question1" />B. Эта приставка указывает
+              что это язык есть облегчённой версией языка Java.
+            </li>
+            <li>
+              <input type="radio" name="question1" value="true" /> C. Это только
+              название, которое никак не связывает этот язык с языком Java.
+            </li>
+            <li>
+              <input type="radio" name="question1" />D. То что эти два языка
+              программирования выпустила одна и та же компания.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Что такое идентификатор в JavaScript?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question2" value="true" />A. Это имя
+              переменной или функции.
+            </li>
+            <li>
+              <input type="radio" name="question2" />B. Это тип данных - Объект
+            </li>
+            <li>
+              <input type="radio" name="question2" /> C. Это тип данных -
+              Функция
+            </li>
+            <li>
+              <input type="radio" name="question2" />D. Это тип данных - Массив
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Какие элементарные типы есть в JavaScript?</span
+          >
+          <ul>
+            <li>
+              <input type="checkbox" value="true" />A. Number, String, Boolean
+            </li>
+            <li><input type="checkbox" />B. Object, Boolean, String</li>
+            <li><input type="checkbox" />C. Array, null, String</li>
+            <li>
+              <input type="checkbox" value="true" />D. undefined, null, Number
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Назовите три функции для работы с диалоговыми окнами?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question4" />A. alert();
+              Console.WriteLine(); print();
+            </li>
+            <li>
+              <input type="radio" name="question4" />B. alert(); prompt();
+              print();
+            </li>
+            <li>
+              <input type="radio" name="question4" value="true" />C. alert();
+              prompt(); confirm();
+            </li>
+            <li>
+              <input type="radio" name="question4" />D. select(); prompt();
+              print();
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Язык JavaScript является?</span>
+          <ul>
+            <li>
+              <input type="checkbox" value="true" /> A.
+              Прототипно-ориентированный скриптовый язык программирования.
+            </li>
+            <li>
+              <input type="checkbox" value="true" />B. Cобытийно-ориентированный
+              язык программирования.
+            </li>
+            <li>
+              <input type="checkbox" />C. Процедурный язык программирования.
+            </li>
+            <li>
+              <input type="checkbox" />D. Аспектно-ориентированый язык
+              программирования.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">
+            Какие основные функции языка программирования JavaScript?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question6" value="true" /> A. Придание
+              динамики веб-страницам.
+            </li>
+            <li>
+              <input type="radio" name="question6" />B. Для написания конечного
+              продукта под ОС Windows
+            </li>
+            <li>
+              <input type="radio" name="question6" />C. Для разгрузки
+              веб-браузера клиента.
+            </li>
+            <li>
+              <input type="radio" name="question6" />D. Зачастую для разгрузки
+              сервера на котором находится веб-сайт.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">
+            Кто разработал язык программирования JavaScript?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question7" value="true" />A. Брендан Айк
+            </li>
+            <li><input type="radio" name="question7" />B. Андерс Хейлсберг</li>
+            <li><input type="radio" name="question7" />C. Джозеф Джорден</li>
+            <li><input type="radio" name="question7" />D. Марк Цукерберг</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">
+            Как изначально назывался язык программирования JavaScript?</span
+          >
+          <ul>
+            <li><input type="radio" name="question8" />A. AOL</li>
+            <li>
+              <input type="radio" name="question8" value="true" />B. Netscape
+            </li>
+            <li><input type="radio" name="question8" />C. JavaLite</li>
+            <li><input type="radio" name="question8" />D. Mocha</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Как официально называется язык программирования JavaScript?</span
+          >
+          <ul>
+            <li><input type="radio" name="question9" />A. ActionScript</li>
+            <li>
+              <input type="radio" name="question9" value="true" />B. ECMAScript
+            </li>
+            <li><input type="radio" name="question9" />C. Java</li>
+            <li><input type="radio" name="question9" />D. Script</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Переменная типа undefined в JavaScript, это переменная которая
+            хранит -</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question10" value="true" />A.не
+              определенное значение
+            </li>
+            <li>
+              <input type="radio" name="question10" />B. значение типа null
+            </li>
+            <li>
+              <input type="radio" name="question10" />C. числовое значение
+            </li>
+            <li>
+              <input type="radio" name="question10" />D. значение типа Object
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Что такое условная конструкция?</span>
+          <ul>
+            <li>
+              <input type="radio" name="question11" value="true" />A.Блок кода,
+              который выполняется при определенном условии.
+            </li>
+            <li>
+              <input type="radio" name="question11" />B. Блок кода, который
+              выполняется определенное.
+            </li>
+            <li><input type="radio" name="question11" />C. Это функция.</li>
+            <li><input type="radio" name="question11" />D. Это массив.</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Что такое тернарный оператор?</span>
+          <ul>
+            <li><input type="radio" name="question12" />A. Это цикл</li>
+            <li>
+              <input type="radio" name="question12" value="true" />B. Это
+              условная конструкция
+            </li>
+            <li>
+              <input type="radio" name="question12" />C. это ключевое слово
+            </li>
+            <li><input type="radio" name="question12" />D. это функция</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Что такое цикл?</span>
+          <ul>
+            <li>
+              <input type="radio" name="question13" value="true" />A. Это
+              циклическая конструкция, которая выполняется
+            </li>
+            <li><input type="radio" name="question13" />B. Это массив</li>
+            <li><input type="radio" name="question13" />C. Это функция</li>
+            <li><input type="radio" name="question13" />D. Это объект</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Что такое итерация?</span>
+          <ul>
+            <li>
+              <input type="radio" name="question14" />A. Это циклическая
+              конструкция.
+            </li>
+            <li>
+              <input type="radio" name="question14" />B. Это переменная цикла.
+            </li>
+            <li>
+              <input type="radio" name="question14" value="true" />C. Это один
+              проход циклической конструкции.
+            </li>
+            <li>
+              <input type="radio" name="question14" />D. Это условная
+              конструкция.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Для чего используются служебные слова continue?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question15" value="true" />A. ЭДля
+              перехода на следующую итерацию цикла
+            </li>
+            <li>
+              <input type="radio" name="question15" />B. Для перехода на метку
+            </li>
+            <li>
+              <input type="radio" name="question15" />C. Для завершения цикла
+            </li>
+            <li>
+              <input type="radio" name="question15" />D. Для завершения работы
+              JavaScriptя
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Для чего используются служебные слова break?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question16" />A. Для перехода на
+              следующую итерацию цикла.
+            </li>
+            <li>
+              <input type="radio" name="question16" />B. Для перехода на метку.
+            </li>
+            <li>
+              <input type="radio" name="question16" value="true" />C. Для
+              завершения работы цикла.
+            </li>
+            <li>
+              <input type="radio" name="question16" />D. Для выхода из условной
+              конструкции ветвления.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Цикл с параметрами объявляется с помощью ключевого слова</span
+          >
+          <ul>
+            <li><input type="radio" name="question17" />A. continue</li>
+            <li><input type="radio" name="question17" />B. while</li>
+            <li><input type="radio" name="question17" />C. do while</li>
+            <li><input type="radio" name="question17" value="true" />D. for</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Имеется участок кода: for (var i = 0; i < 10; i++) { continue;
+            document.write(i + "<br />"); } Какой результат увидит
+            пользователь?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question18" />A.Результат будет выведены
+              переменные итерации от 0 до 9.
+            </li>
+            <li>
+              <input type="radio" name="question18" value="true" />B.
+              Результатом будет пустое окно браузера
+            </li>
+            <li>
+              <input type="radio" name="question18" />C. Результат будет
+              выведены переменные итерации от 0 до 10.
+            </li>
+            <li>
+              <input type="radio" name="question18" />D. Результат будет
+              выведены переменные итерации от 1 до 9.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Имеется участок кода: var a = "Код"; if (a == "Код") { alert("Верно
+            ");} else { alert("НЕ верно ");} alert("Hello"); Какой результат
+            увидит пользователь?</span
+          >
+          <ul>
+            <li><input type="radio" name="question19" />A. Не верно Hello</li>
+            <li>
+              <input type="radio" name="question19" value="true" />B. Верно
+              Hello
+            </li>
+            <li><input type="radio" name="question19" />C. Hello</li>
+            <li><input type="radio" name="question19" />D. Верно</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Имеется участок кода: var a = "Кот"; var msg = (a == "Код") ?
+            "верно”:" НЕ верно"; alert(msg); Какой результат увидит
+            пользователь?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question20" value="true" />A. НЕ верно
+            </li>
+            <li><input type="radio" name="question20" />B. Верно</li>
+            <li><input type="radio" name="question20" />C. Верно Не верно</li>
+            <li>
+              <input type="radio" name="question20" />D. результатом будет
+              пустое окно браузера
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Что такое массив в языке программирования JavaScript?</span
+          >
+          <ul>
+            <li><input type="radio" name="question21" />A. Это функция.</li>
+            <li><input type="radio" name="question21" />B. Это переменная.</li>
+            <li>
+              <input type="radio" name="question21" value="true" />C. Это
+              коллекция проиндексированных значений.
+            </li>
+            <li>
+              <input type="radio" name="question21" />D. Это коллекция не
+              проиндексированных значений
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >При создании массива был использован конструктор Array(), в который
+            передали одно значение «8» var a = Array(8); Какой массив в
+            результате будет создан?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question22" />A. Массив с «8» элементов
+              заполненный числами «8»
+            </li>
+            <li>
+              <input type="radio" name="question22" />B. Массив на один элемент
+              с числом «8»
+            </li>
+            <li>
+              <input type="radio" name="question22" value="true" />C. Пустой
+              массив на «8» элементов
+            </li>
+            <li>
+              <input type="radio" name="question22" />D. Так создавать массив
+              нельзя
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Как свойство возвращает длину массива?</span
+          >
+          <ul>
+            <li><input type="radio" name="question23" />A. insert</li>
+            <li>
+              <input type="radio" name="question23" value="true" />B. length
+            </li>
+            <li><input type="radio" name="question23" />C. return</li>
+            <li><input type="radio" name="question23" />D. write</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >При вызове на массиве метода Join(), во что будет преобразован
+            массив? var res = arr.join(); A</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question24" />A. В массиве все элементы
+              будут преобразованы по возможности в числовые.
+            </li>
+            <li>
+              <input type="radio" name="question24" />B. Массив будет скопирован
+              в другой массив.
+            </li>
+            <li>
+              <input type="radio" name="question24" />C. Этот метод никак не
+              относится к преобразованию массива.
+            </li>
+            <li>
+              <input type="radio" name="question24" value="true" />D. Массив
+              будет преобразован в объединённую строку.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >При вызове на массиве метода reverse(), как будет изменен
+            массив.arr.reverse();</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question25" />A. Такого метода не
+              существует.
+            </li>
+            <li>
+              <input type="radio" name="question25" />B. Будут только уделены
+              все элементы со значением undefined.
+            </li>
+            <li>
+              <input type="radio" name="question25" />C. Будут только уделены
+              все элементы null.
+            </li>
+            <li>
+              <input type="radio" name="question25" value="true" />D. Массив
+              будет преобразован с теми же значениями в обратном порядке.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Требуется добавить один элемент в конец массива. Какой метод для
+            этого следует вызвать?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question26" value="true" />A. push();
+            </li>
+            <li><input type="radio" name="question26" />B.join();</li>
+            <li><input type="radio" name="question26" />C. reverse();</li>
+            <li><input type="radio" name="question26" />D. shift();</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Требуется вернуть первый элемент из массива и при этом удалить его
+            из текущего массива. Какой метод для этого следует вызвать?</span
+          >
+          <ul>
+            <li><input type="radio" name="question27" />A. push();</li>
+            <li><input type="radio" name="question27" />B. join();</li>
+            <li><input type="radio" name="question27" />C. reverse();</li>
+            <li>
+              <input type="radio" name="question27" value="true" />D. shift();
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Требуется добавить один элемент в начало чмассива. Какой метод для
+            этого следует вызвать?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question28" value="true" />A. unshift();
+            </li>
+            <li><input type="radio" name="question28" />B. join();</li>
+            <li><input type="radio" name="question28" />C. reverse();</li>
+            <li><input type="radio" name="question28" />D. push();</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Требуется вернуть фрагмент массива или под массив. Какой метод для
+            этого следует вызвать?</span
+          >
+          <ul>
+            <li><input type="radio" name="question29" />A. join();</li>
+            <li>
+              <input type="radio" name="question29" value="true" />B. slice();
+            </li>
+            <li><input type="radio" name="question29" />C. reverse();</li>
+            <li><input type="radio" name="question29" />D. push();</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Требуется удалить последний элемент массива. Какой метод для этого
+            следует вызвать?</span
+          >
+          <ul>
+            <li><input type="radio" name="question30" />A. reverse();</li>
+            <li><input type="radio" name="question30" />B. join();</li>
+            <li>
+              <input type="radio" name="question30" value="true" />C. pop();
+            </li>
+            <li><input type="radio" name="question30" />D. push();</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Что такое функция?</span>
+          <ul>
+            <li>
+              <input type="radio" name="question31" value="true" />A. Это
+              именованный участок кода, который может быть вызван по имени
+              столько раз, сколько будет необходимо.
+            </li>
+            <li>
+              <input type="radio" name="question31" />B. Это простая переменная.
+            </li>
+            <li><input type="radio" name="question31" />C. Это массив.</li>
+            <li><input type="radio" name="question31" />D. Это цикл.</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Что такое функция-конструктор?</span>
+          <ul>
+            <li>
+              <input type="radio" name="question32" value="true" />A. Это
+              функция, которая выполняет инициализацию свойств объекта и
+              предназначена для использования совместно с инструкцией new.
+            </li>
+            <li>
+              <input type="radio" name="question32" />B. Это функция, которая
+              создана с помощью ключевого слова function.
+            </li>
+            <li>
+              <input type="radio" name="question32" />C. Это массив функций.
+            </li>
+            <li>
+              <input type="radio" name="question32" />D. Это функциональный
+              литерал.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question">Что такое объект Arguments?</span>
+          <ul>
+            <li>
+              <input type="radio" name="question33" />A. Это
+              Функция-конструктор.
+            </li>
+            <li>
+              <input type="radio" name="question33" value="true" />B.Это нечто
+              вроде массива позволяющего извлекать переданные функции значения
+              по номеру, а не по имени.
+            </li>
+            <li>
+              <input type="radio" name="question33" />C. Это функция, которая
+              выполняет инициализацию свойств объекта и предназначена для
+              использования совместно с инструкцией new.
+            </li>
+            <li>
+              <input type="radio" name="question33" />D. Это функциональный
+              литерал.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Если в функции явно не вызвать ключевое слово return, что вернет
+            функция?</span
+          >
+          <ul>
+            <li><input type="radio" name="question34" />A. значение null</li>
+            <li>
+              <input type="radio" name="question34" value="true" />B. значение
+              undefined
+            </li>
+            <li><input type="radio" name="question34" />C. значение 0</li>
+            <li><input type="radio" name="question34" />D. значение -1</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Сколько аргументов может принимать функция?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question35" />A. Функция обязана
+              принимать столько аргументов, сколько указано аргументов в
+              функции.
+            </li>
+            <li>
+              <input type="radio" name="question35" value="true" />B. Функция не
+              обязана принимать то количество аргументов, сколько указана в
+              параметрах.
+            </li>
+            <li>
+              <input type="radio" name="question35" />C. Функция не может
+              принимать аргументы.
+            </li>
+            <li>
+              <input type="radio" name="question35" />D. В функцию можно
+              передавать произвольное количество В функцию можно передавать
+              произвольное количество
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Для чего используется ключевое слово return?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question36" />A. Для вызова функции.
+            </li>
+            <li>
+              <input type="radio" name="question36" />B. Для передачи аргумента
+              в функцию.
+            </li>
+            <li>
+              <input type="radio" name="question36" />C. Для передачи массива в
+              функцию.
+            </li>
+            <li>
+              <input type="radio" name="question36" value="true" />D. Для
+              возврата значения из функции.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Имеется участок кода: for (var i = 0; i < 10; i++) { }
+            document.write("i = " + i); Какой результат увидит
+            пользователь?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question37" value="true" />A. ri=10;
+            </li>
+            <li>
+              <input type="radio" name="question37" />B. i= будет ошибка при
+              запуске браузера;
+            </li>
+            <li><input type="radio" name="question37" />C. pop();</li>
+            <li><input type="radio" name="question37" />D. i=null;</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Имеется участок кода: var f = function () { result = 5 + 8; }; f();
+            document.write("res = "+result); Какой результат увидит
+            пользователь?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question38" value="true" />A. res=13
+            </li>
+            <li>
+              <input type="radio" name="question38" />B. res = будет ошибка при
+              запуске браузера;
+            </li>
+            <li><input type="radio" name="question38" />C. res = undefined;</li>
+            <li><input type="radio" name="question38" />D. res =null;</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Имеется участок кода: var f = function Func() { result = 5 + 8;};
+            Func(); document.write("res = "+result); Какой результат увидит
+            пользователь?</span
+          >
+          <ul>
+            <li><input type="radio" name="question39" />A. res=13</li>
+            <li>
+              <input type="radio" name="question39" value="true" />B. res =
+              будет ошибка при запуске браузера;
+            </li>
+            <li><input type="radio" name="question39" />C. res = undefined;</li>
+            <li><input type="radio" name="question39" />D. res =null;</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="test-item">
+        <fieldset>
+          <span class="test-number"></span
+          ><span class="test-question"
+            >Имеется участок кода: var f = function() { result = 8 + 8;};
+            f(5,8,3); document.write("res = "+result); Какой результат увидит
+            пользователь?</span
+          >
+          <ul>
+            <li>
+              <input type="radio" name="question40" value="true" />A. res=16
+            </li>
+            <li>
+              <input type="radio" name="question40" />B. res = будет ошибка при
+              запуске браузера;
+            </li>
+            <li><input type="radio" name="question40" />C. res = undefined;</li>
+            <li><input type="radio" name="question40" />D.res =null;</li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="student-info">
+        Имя: <input type="text" id="test" /> Фамиллия: <input type="text" />
+        <input type="submit" id="sendBtn" value="Отправить" />
+      </div>
+      <div id="result"></div>
+    </form>
+
+    <script>
+      const result = document.querySelector("#result");
+      const questionNumber = document.querySelectorAll(".test-number");
+      const sendBtn = document.querySelector("#sendBtn");
+      let question = document.querySelectorAll('input[type="radio"]');
+      let mark = 0;
+      test.addEventListener("click", function (e) {
+        console.log(e);
+      });
+
+      for (i = 0; i < questionNumber.length; i++) {
+        questionNumber[i].innerHTML = `<b>${i + 1}.</b> `;
+      }
+
+      sendBtn.addEventListener("click", getResult);
+
+      function getResult(e) {
+        e.preventDefault();
+        for (i = 0; i < question.length; i++) {
+          if (question[i].checked == true && question[i].value == "true") {
+            ++mark;
+            result.innerHTML = `Результат:${mark}`;
+            question[i].parentElement.classList.toggle("bgGreen");
+            // question[i].disabled = true
+          } else if (question[i].checked == true && question[i].value == "on") {
+            question[i].parentElement.classList.toggle("bgRed");
+          }
+        }
+        this.disabled = true;
+      }
+      //Timer
+      const startBtn = document.querySelector(".timer__btn");
+      const minutesTimer = document.getElementById("minutes");
+      const secondsTimer = document.getElementById("seconds");
+
+      function startTimer() {
+        let seconds = 0;
+        let minutes = 0;
+        let myInterval = setInterval(function () {
+          console.log(++seconds);
+          if (seconds == 60) {
+            seconds = 0;
+            minutes++;
+          }
+
+          if (minutes == 40) {
+            clearInterval(myInterval);
+            alert("Time is over");
+          }
+          secondsTimer.innerText = seconds;
+          minutesTimer.innerText = minutes;
+        }, 1000);
+      }
+      startTimer();
+    </script>
+  </body>
+</html>
